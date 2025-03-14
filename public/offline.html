@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SismoAlert - Sin conexión</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 500px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #e03131;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    
+    .instructions {
+      background-color: #fff5f5;
+      border: 1px solid #ffe3e3;
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    
+    .instructions h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #e03131;
+    }
+    
+    .instructions ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    
+    .instructions li {
+      margin-bottom: 8px;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #e03131;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background-color 0.2s;
+    }
+    
+    .button:hover {
+      background-color: #c92a2a;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      
+      .container {
+        background-color: #1e1e1e;
+      }
+      
+      .instructions {
+        background-color: #2d2d2d;
+        border-color: #3d3d3d;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📶</div>
+    <h1>Sin conexión a Internet</h1>
+    <p>No se puede acceder a SismoAlert en este momento porque no tienes conexión a Internet.</p>
+    
+    <div class="instructions">
+      <h2>En caso de sismo:</h2>
+      <ul>
+        <li>Mantén la calma y protégete bajo una mesa resistente o junto a un muro estructural.</li>
+        <li>Aléjate de ventanas y objetos que puedan caer.</li>
+        <li>No uses ascensores.</li>
+        <li>Si estás en la calle, aléjate de edificios, árboles y cables eléctricos.</li>
+        <li>Si estás conduciendo, detente en un lugar seguro lejos de puentes y edificios.</li>
+      </ul>
+    </div>
+    
+    <a href="/" class="button">Intentar nuevamente</a>
+  </div>
+</body>
+</html>
+
